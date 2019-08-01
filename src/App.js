@@ -14,6 +14,7 @@ const App = observer(() => {
       <input
         type="submit"
         onClick={e => store.saveTodo(store.tempText)}
+        disabled={toggleEdit ? "disabled" : ""}
       />
       <ToDoList todos={store.todos} delToDo={store.deleteTodo} toggleedit={toggleEdit} setedit={setToggleEdit}/>
     </div>

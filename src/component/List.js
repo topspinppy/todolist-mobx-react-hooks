@@ -28,7 +28,7 @@ const List = observer(props => {
           ) : (
             <li key={index}>{item}</li>
           )}
-          {!props.toggleedit ? (
+          {!props.toggleedit  ? (
             <div>
               <button onClick={() => props.delToDo(index)}>remove</button>
               <button
